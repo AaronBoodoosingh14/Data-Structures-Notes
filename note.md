@@ -228,8 +228,52 @@ print('fib_0:', fib_0)
 print('fib_1:', fib_1)
 print('fib_n:', fib_n)
 ```
-## Sets 
+# Sets 
+A set is an unordered collection with no duplicate elements, it is a mathematical way to describe collections of diffrernt unique objects.
 
+In Python, we create sets by placing all the elements inside curly braces {} , separated by comma. A set can have any number of items and they may be of different types (integer, float, tuple, string etc.). But a set cannot have mutable elements like lists, sets or dictionaries as its elements.
+* Sets aren’t sliceable nor indexable
+* Sets cannot have sets inside them
+* Sets do not have order; nor order of insertion
+* Sets cannot guarantee that their values will be in order
+* Sets do not record a value’s position
+* Two set are consided disjointed when two sets share no common value.
+
+
+```python
+
+# Set definition examples:
+example_set1 = {1, 2, 3}
+example_set2 = {'h','e','l','l','o'}
+
+print('example_set1:', example_set1)
+print('example_set2:', example_set2) # Notice there is only 1 'l'; Also notice the order of the values outputted
+```
+Built in functions include:
+* Len
+* Min
+* Max
+* ``` example_set = set('hello')``` setting an iterable to a set
+* list to set and tuple to set
+
+Basic Membership Operators
+
+Membership is one of the key operations with set because:
+
+* A set has no duplicates
+* A set’s membership operation is one of the fastest operations compared to strings, lists, or tuples this will be covered more when we look at the concept of: complexity
+* By using membership operator, we can be certain a target exists or does not exist in our data
+
+### Set operators: 
+
+* Union: The joining/combining of two sets, the union operator is "|"
+* Intersection: Members/Items that only exists in both sets, the intersection operator is "&"
+* Difference: Members/items that only exists in the first set and not the second set, the difference operator is "-"
+* Symmetric Difference: : Members/items that exists one or the other set but not both sets, the symmetric difference operator is "^"
+* Proper Subset: A is proper subset of B if all members of A is found in B, but A cannot be exactly the same as B. This is a boolean operator, the operator is "<" 
+* Subset: A is a Proper Subset of B if A < B is True, but A can equal to B unlike a proper subset also a boolean, the operator is <=
+* Proper Superset: A is a proper superset of B if A has all the values of B and more, but they are not equal to each other also a boolean, the operator is ">"
+* Superset: A is a superset of B if A > B or A == B also a boolean, the operator is ">="
 
 
 

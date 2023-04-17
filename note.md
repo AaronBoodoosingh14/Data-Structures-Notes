@@ -6,8 +6,6 @@ The Data Structures course focuses on expanding our basic python skills and lear
 
 A Matrix is a representation of numbers, symbols, expressions in 2 dimensional array. In python data structures can be made allowing us to have values in rows and columns, we can do this by making a list inside of a list.
 
-![image](https://user-images.githubusercontent.com/129182651/232047400-071bb508-ff4f-433b-838e-a8b4a4b7b6e3.png)
-
 There is no data structure called a "Matrix" instead we have to follow a set of rules when making a list inside of a list they are as followd.
 
 * All rows must have the same number of values
@@ -33,7 +31,6 @@ print('value at row 2 column 2: %s' % matrix_a[1][1])
 
 
 
-```
 
 ## List Comprehension In Python 3 
 
@@ -41,7 +38,7 @@ List comprehension is concise method to create a list
 
 We use this technique when:
 
-* Te list is a result of some operations applied to all its items, 
+* The list is a result of some operations applied to all its items, 
 
 * Its made from another form of iterable data 
 
@@ -76,7 +73,7 @@ print('Vec as a single list of values: %s' % result)
 ```
 It is important to note that the order of your clauses matter
 
-# Lesson 2: Map and Filter
+# Map and Filter
 
 ## The Map Function
 
@@ -137,20 +134,7 @@ print('Odd Numbers from 1 to 100:', odds)
 
 ```
 
-### Example problem: list of Palindromic numbers: 
-
-```python
-def isPalindrome(x):
-    ''' isPalindrome returns True if string X is a palindrome.'''
-    return x == x[::-1]
-
-array = list(range(1,10000))
-
-palindromic_numbers = list(map(int, filter(isPalindrome, map(str, array))))
-print('Palindromic Numbers from 1 to 10,000', palindromicNumbers)
-```
-
-## Lesson 3: Tuples
+# Tuples
 
 Strings and list are very similar data types with some key differences, these differences can cause it to be annoying. But when using a tuple all these issues 
 
@@ -275,9 +259,26 @@ Membership is one of the key operations with set because:
 * Proper Superset: A is a proper superset of B if A has all the values of B and more, but they are not equal to each other also a boolean, the operator is ">"
 * Superset: A is a superset of B if A > B or A == B also a boolean, the operator is ">="
 
+# Dictionaries 
 
+Dictionary in Python 3 is a data type that stores a collection of (key, value) pairs, where each possible key appears at most once in the collection. Common operations with dictionaries include adding a pair, removing a pair, modifying an existing pair, and looking up a value associated with a particular key. Dictionaries in Python 3 are defined using curly braces {} and use a key-value pair format. For example:
 
+```python
+Copy code
+# Dictionary Example
+sammy = {
+    'username': 'sammy',
+    'online': True,
+    'followers': 42
+}
 
+```
+
+Dictionary properties include keys and values. Keys are unique addresses for a dictionary value's location and must be immutable (e.g., strings, numbers, tuples, frozenset) and unique. Values can be of any data type. Dictionaries can be updated by modifying existing values using the key, adding new values by creating a new key, or overwriting a value at an existing key by referencing and recreating the value for it.
+
+Dictionaries can be deleted using the del keyword, which can delete a specific key-value pair or the entire dictionary. Membership in a dictionary can be checked using the in and not in operators. Built-in functions can also be used with dictionaries, such as len() to get the size of the dictionary, max() and min() to get the largest and smallest keys, str() to convert the dictionary to a string, and list() to convert the dictionary to a list.
+
+Dictionaries can be duplicated using the copy() method, which creates a shallow copy of the dictionary, or using the fromkeys() method, which creates a new dictionary with the same keys but with all values set to None.
 
 
 

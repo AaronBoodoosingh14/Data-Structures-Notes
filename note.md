@@ -264,7 +264,6 @@ Membership is one of the key operations with set because:
 Dictionary in Python 3 is a data type that stores a collection of (key, value) pairs, where each possible key appears at most once in the collection. Common operations with dictionaries include adding a pair, removing a pair, modifying an existing pair, and looking up a value associated with a particular key. Dictionaries in Python 3 are defined using curly braces {} and use a key-value pair format. For example:
 
 ```python
-Copy code
 # Dictionary Example
 sammy = {
     'username': 'sammy',
